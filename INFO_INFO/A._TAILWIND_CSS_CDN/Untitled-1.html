@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi CSS 1</title>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+        font-size: medium;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+    }
+
+    .box-lucas {
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+        background-color: rgb(0, 255, 89);
+        transition: transform 0.5s ease, background-color 0.5s ease;
+    }
+
+    .box-lucas::hover {
+        transform: scale(1.2);
+        background-color: rgb(90, 123, 40);
+    }
+</style>
+<body>
+    <h1>Animasi dan Transisi CSS 1</h1>
+
+    <h2>Aku ingin pergi ke cimuncang</h2>
+    <div class="box-lucas"></div>
+
+    <h2>Aku ingin libur panjang selama 1 bulan</h2>
+    <div class="box-lucas"></div>
+</body>
+</html>
