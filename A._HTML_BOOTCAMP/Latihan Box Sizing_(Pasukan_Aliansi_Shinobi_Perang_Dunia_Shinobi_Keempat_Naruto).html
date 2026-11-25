@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Box Sizing (Pasukan Aliansi Shinobi, Perang Dunia Shinobi Keempat Naruto)</title>
+</head>
+<style>
+    div {
+        width: 352px;
+        background-color: yellow;
+    }
+    img {
+        width: 300px;
+        background-color: lightgreen;
+        margin: 1px;
+        padding: 20px;
+        border: 3px solid black;
+        box-sizing: border-box;
+    }
+    caption,b {
+        font-size: larger;
+    }
+    @media (max-width: 768px) {
+        .card {
+            flex: 1 1 calc(50% - 40px);
+        }
+    }
+    @media (max-width: 480px) {
+        .card {
+            flex: 1 1 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1 class="card">Latihan Box Sizing (Pasukan Aliansi Shinobi, Perang Dunia Shinobi Keempat Naruto)</h1>
+    </header>
+
+    <main class="card">
+        <article>
+            <div>
+                <img src="https://static.wikia.nocookie.net/universeconquest/images/5/58/Shinobi.jpg/revision/latest?cb=20171114174705" alt=""><br>
+                <caption align="center"><b>Huruf Kanji Pasukan Aliansi Shinobi</b></caption>
+                <hr>
+                <img src="https://upload.wikimedia.org/wikipedia/id/5/55/Simbol_Konohagakure.png" alt=""><br>
+                <caption><b>Konohagakure</b></caption>
+                <br>
+                <hr>
+                <img src="https://upload.wikimedia.org/wikipedia/id/b/b9/Simbol_Sunagakure.png" alt=""><br><caption><b>Sunagakure</b></caption>
+                <hr>
+                <img src="https://upload.wikimedia.org/wikipedia/id/5/54/Simbol_Kumogakure.png" alt=""><br><caption><b>Kumogakure</b></caption><br>
+                <hr>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Iwagakure_Pays_de_la_Terre.svg/1024px-Iwagakure_Pays_de_la_Terre.svg.png" alt=""><br>
+                <caption><b>Iwagakure</b></caption>
+                <hr>
+                <img src="https://upload.wikimedia.org/wikipedia/id/1/13/Simbol_Kirigakure.png" alt=""><br>
+                <caption><b>Kirigakure</b></caption>
+                <hr>
+                <img src="https://mangainsider.com/wp-content/uploads/2022/06/Land-of-Iron.png" alt=""><br>
+                <caption align="center"><b>Negara Besi (Negeri Para Samurai)</b></caption>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

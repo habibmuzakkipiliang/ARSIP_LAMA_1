@@ -1,0 +1,45 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Responsive grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .col {
+        flex: 100%; /* Full width on small screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .col {
+        flex: 50%; /* Two columns on medium screens */
+    }
+}
+
+@media (min-width: 1025px) {
+    .col {
+        flex: 33.33%; /* Three columns on large screens */
+    }
+}

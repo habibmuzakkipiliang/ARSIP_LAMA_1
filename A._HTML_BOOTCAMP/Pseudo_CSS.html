@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo CSS dan Box Model</title>
+    <style>
+        ::selection {
+            background-color: darkgreen;
+        }
+        td,th,tr,table{
+            font-size: medium;
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: yellow;
+        }
+        b {
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pseudo CSS dan Box Model</h1>
+    </header>
+
+    <main>
+        <article>
+            <table>
+                <tr>
+                    <th>Pseudo Elemen</th>
+                    <th>Deskripsi</th>
+                </tr>
+                <tr>
+                    <td>::before</td>
+                    <td>Menyisipkan suatu konten sebelum element dari selector</td>
+                </tr>
+                <tr>
+                    <td>::after</td>
+                    <td>Menyisipkan suatu konten setelah element dari selector</td>
+                </tr>
+                <tr>
+                    <td>::selection</td>
+                    <td>Memberikan style pada bagian element yang diselect oleh pengguna</td>
+                </tr>
+                <tr>
+                    <td>::first-letter	</td>
+                    <td>Memberikan style pada huruf pertama pada element dari selector</td>
+                </tr>
+                <tr>
+                    <td>::first-line</td>
+                    <td>Memberikan style pada baris pertama pada element dari selector</td>
+                </tr>
+            </table>
+            <hr>
+            <p>
+                Tidak semua properti CSS dapat digunakan dengan ::first-letter. Beberapa yang bisa digunakan adalah:
+            </p>
+            <ul>
+                <li>font</li>
+                <li>color</li>
+                <li>background</li>
+                <li>margin</li>
+                <li>padding</li>
+                <li>border</li>
+                <li>text-decoration</li>
+                <li>line-height</li>
+                <li>float</li>
+            </ul>
+            <hr>
+            <p>
+                Properti CSS yang bisa dan sering digunakan dengan ::first-line adalah:
+            </p>
+            <ul>
+                <li>font</li>
+                <li>background</li>
+                <li>word-spacing</li>
+                <li>letter-spacing</li>
+                <li>text-transform</li>
+                <li>line-height</li>
+                <li>color</li>
+            </ul>
+            <hr>
+            <b>BOX MODEL</b>
+            <p>
+                Jadi, semua HTML element itu dianggap sebagai sebuah kotak (box). Karena hal inilah istilah box model muncul. Box model sendiri bisa kalian anggap sebagai kotak yang membungkus setiap HTML element.
+                Box model terdiri dari:
+            </p>
+            <ul>
+                <li>margin yaitu area terluar yang kosong setelah border. Margin bersifat transparan.</li>
+                <li>border yaitu garis tepi yang membungkus padding dan konten.</li>
+                <li>padding yaitu area kosong di antara konten dan border. Padding bersifat transparan.</li>
+                <li>content yaitu konten (value/nilai) dari HTML element. Bisa berupa teks, gambar, video, ataupun suara.</li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>
